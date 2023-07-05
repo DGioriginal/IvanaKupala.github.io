@@ -1096,7 +1096,7 @@ header {
   z-index: 700;
 }
 header .row {
-  height: 1000;
+  height: auto;
   max-width: 1300px;
   position: relative;
 }
@@ -1289,7 +1289,7 @@ header .header-logo a {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 36px;
-  right: 10px;
+  right: 30px;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -1300,7 +1300,7 @@ header .header-logo a {
   display: block;
   height: 2px;
   width: 12px;
-  background-color: #ffffff7f;
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 9px;
@@ -1346,11 +1346,11 @@ header .header-logo a {
   }
 }
 
-# {
+#home {
   width: 100%;
   height: 100%;
   background-color: #151515;
-  background-image: url(images/BackGround.jpg);
+  background-image: url(../images/Picsart.png);
   background-repeat: no-repeat;
   background-position: center 30%;
   -webkit-background-size: cover;
@@ -1360,7 +1360,7 @@ header .header-logo a {
   min-height: 804px;
   position: relative;
 }
-# .overlay {
+#home .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -1370,7 +1370,7 @@ header .header-logo a {
   background-color: #19191b;
 }
 
-.-content-table {
+.home-content-table {
   width: 100%;
   height: 100%;
   display: table;
@@ -1378,17 +1378,17 @@ header .header-logo a {
   text-align: center;
 }
 
-.-content-tablecell {
+.home-content-tablecell {
   display: table-cell;
   vertical-align: middle;
   z-index: 500;
 }
-.-content-tablecell .row {
+.home-content-tablecell .row {
   position: relative;
   padding-top: 16.2rem;
   padding-bottom: 15rem;
 }
-.-content-tablecell h3 {
+.home-content-tablecell h3 {
   font-family: "montserrat-bold", sans-serif;
   font-size: 2.2rem;
   color: white;
@@ -1396,21 +1396,21 @@ header .header-logo a {
   letter-spacing: .3rem;
   margin: 0 0 .9rem 0;
 }
-.-content-tablecell h1 {
+.home-content-tablecell h1 {
   font-family: "montserrat-bold", serif;
   font-size: 9rem;
   line-height: 1.133;
   color: #FFFFFF;
 }
-.-content-tablecell .more {
+.home-content-tablecell .more {
   margin: 4.8rem 0 0 0;
 }
-.-content-tablecell .more .button {
+.home-content-tablecell .more .button {
   border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
-.-social-list {
+.home-social-list {
   position: absolute;
   left: 48px;
   bottom: 54px;
@@ -1421,7 +1421,7 @@ header .header-logo a {
   line-height: 1.75;
   text-align: center;
 }
-.-social-list::before {
+.home-social-list::before {
   display: block;
   content: "";
   width: 2px;
@@ -1431,15 +1431,15 @@ header .header-logo a {
   margin-right: auto;
   margin-bottom: 12px;
 }
-.-social-list li {
+.home-social-list li {
   padding-left: 0;
 }
-.-social-list li a, .-social-list li a:visited {
+.home-social-list li a, .home-social-list li a:visited {
   color: #FFFFFF;
 }
-.-social-list li a:hover, 
-.-social-list li a:focus, 
-.-social-list li a:active {
+.home-social-list li a:hover, 
+.home-social-list li a:focus, 
+.home-social-list li a:active {
   color: #151515;
 }
 
@@ -1482,6 +1482,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   animation: animate-it 3s ease infinite;
 }
 
+/* vertical animation */
 @-webkit-keyframes animate-it {
   0%, 60%, 80%, 100% {
     -webkit-transform: translateX(0);
@@ -1506,41 +1507,41 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 @media only screen and (max-width: 1200px) {
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 2.1rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 7rem;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 2rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  .-content-tablecell .row {
+  .home-content-tablecell .row {
     max-width: 600px;
   }
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 1.8rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 5.2rem;
   }
-  .-content-tablecell h1 br {
+  .home-content-tablecell h1 br {
     display: none;
   }
 
-  .-social-list {
+  .home-social-list {
     left: 36px;
     bottom: 30px;
     font-size: 2.1rem;
   }
-  .-social-list::before {
+  .home-social-list::before {
     height: 30px;
   }
 
@@ -1551,55 +1552,55 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   }
 }
 @media only screen and (max-width: 600px) {
-  # {
+  #home {
     min-height: 702px;
   }
 
-  .-content-tablecell .row {
+  .home-content-tablecell .row {
     max-width: 480px;
     padding-top: 12rem;
     padding-bottom: 12rem;
   }
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 1.7rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 4.8rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  .-content-tablecell .row {
+  .home-content-tablecell .row {
     max-width: 420px;
   }
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 1.5rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 4.2rem;
   }
 
-  .-social-list {
+  .home-social-list {
     left: 30px;
     bottom: 30px;
     font-size: 1.8rem;
   }
-  .-social-list::before {
+  .home-social-list::before {
     height: 24px;
   }
 }
 @media only screen and (max-width: 400px) {
-  # {
+  #home {
     min-height: 654px;
   }
 
-  .-content-tablecell .row {
+  .home-content-tablecell .row {
     padding-top: 4.8rem;
     padding-bottom: 10.8rem;
   }
-  .-content-tablecell h3 {
+  .home-content-tablecell h3 {
     font-size: 1.4rem;
   }
-  .-content-tablecell h1 {
+  .home-content-tablecell h1 {
     font-size: 3.6rem;
   }
 }
@@ -1607,14 +1608,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 #about {
   position: relative;
   padding: 4.2rem 0 12rem;
-  background-color: #151515;
-  background-image: url(images/About.jpg);
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   background-color: #FFFFFF;
   min-height: 696px;
   text-align: center;
@@ -1714,7 +1707,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #services {
   background-color: #19191b;
-  background-image: url(images/Logo.jpg);
+  background-image: url(../images/services-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -1825,14 +1818,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #portfolio {
   background: #FFFFFF;
-  background-color: #151515;
-  background-image: url(images/All.jpg);
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 800px;
   position: relative;
   padding: 0;
@@ -2239,14 +2224,6 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #clients {
   background-color: #e9eaea;
-  background-color: #151515;
-  background-image: url(images/clients\Geesthof.jpg);
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 4.8rem 0 4.8rem;
 }
 #clients .client-lists .owl-item {
@@ -2317,7 +2294,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 #contact {
   background-color: #111111;
-  background-image: url(images/contact-bg.jpg);
+  background-image: url(../images/contact-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: cover;
@@ -2347,9 +2324,9 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 .contact-content {
   max-width: 1024px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   color: #FFFFFF;
-  z-index: 300;
+  z-index: 600;
   position: relative;
 }
 .contact-content h5 {
@@ -2462,6 +2439,27 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
   background: #f89e0f;
+}
+
+#message-warning, #message-success {
+  display: none;
+  background: #000000;
+  padding: 3rem;
+  margin-bottom: 3.6rem;
+  width: 100%;
+}
+
+#message-warning {
+  color: #D32B2E;
+}
+
+#message-success {
+  color: #f9a828;
+}
+
+#message-warning i,
+#message-success i {
+  margin-right: 10px;
 }
 
 #submit-loader {
@@ -2733,7 +2731,7 @@ footer h4.h05::after {
     text-align: center;
   }
   .footer-main .row {
-    max-width: 680px;
+    max-width: 480px;
   }
   .footer-main [class*="col-"] {
     margin-bottom: 3.6rem;

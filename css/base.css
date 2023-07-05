@@ -302,8 +302,8 @@ textarea {
 }
 
 .row {
-  width: 100%;
-  max-width: 1000px;
+  width: 94%;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .row:before, .row:after {
